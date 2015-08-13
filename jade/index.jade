@@ -1,0 +1,340 @@
+doctype html.no-js(lang='en')
+head
+   meta(charset='utf-8')
+   | &#x9;&#x9;
+   meta(name='viewport', content='width=device-width, initial-scale=1.0')
+   | &#x9;&#x9;
+   title Nymi redesign
+   | &#x9;&#x9;
+   link(rel='stylesheet', href='css/foundation.min.css', type='text/css', media='all')
+   | &#x9;&#x9;
+   link(rel='stylesheet', href='css/style.css', type='text/css', media='all')
+   | &#x9;&#x9;
+   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+   | &#x9;&#x9;
+   script(src='js/vendor/modernizr.js')
+   body.main-container.desktop-device
+      header#menu-wrapper.header-container
+         .row
+            .columns.small-12
+               a.logo(href='#')
+                  img(src='img/logo.jpeg', alt='logo')
+               | &#x9;&#x9;
+               nav.clearfix
+                  section.clearfix.language-menu
+                     .right
+                        a(href='#')
+                           img(src='img/ee.png', alt='')
+                        | &#x9;&#x9;
+                        a(href='#')
+                           img(src='img/en.png', alt='')
+                        | &#x9;&#x9;
+                        a(href='#')
+                           img(src='img/ru.png', alt='')
+                  | &#x9;&#x9;
+                  ul.main-menu
+                     li
+                        a(href='') Home
+                     | &#x9;&#x9;
+                     li
+                        a(data-dropdown='drop', aria-controls='drop', aria-expanded='false') Has Dropdown
+                        | &#x9;&#x9;
+                        ul#drop.f-dropdown(data-dropdown-content='', aria-hidden='true', tabindex='-1')
+                           li
+                              a(href='#') This is a link
+                           | &#x9;&#x9;
+                           li
+                              a(href='#') This is another
+                           | &#x9;&#x9;
+                           li
+                              a(href='#') Yet another
+                     | &#x9;&#x9;
+                     li
+                        a(href='') Team
+                     | &#x9;&#x9;
+                     li
+                        a(href='') About Us
+                     | &#x9;&#x9;
+                     li
+                        a(href='') Develop
+                     | &#x9;&#x9;
+                     li
+                        a(href='') Downloads
+                     | &#x9;&#x9;
+                     li
+                        a.button.order-btn(href='') Order
+               | &#x9;&#x9;
+               a#menu-button.open-menu-button(href='javascript:void(0)')
+                  i.fa.fa-bars
+      | &#x9;&#x9;
+      #inner-video-player.video-player
+         a.icon-close(href='index.html#')
+            i.fa.fa-close
+         | &#x9;&#x9;
+         .player
+      | &#x9;&#x9;
+      section#presentation
+         .row
+            .columns.large-8.large-offset-2.medium-12.small-12.text-center
+               a.button.play.inner-video(href='https://www.youtube.com/watch?v=qtuAPs9Gpqw')
+               | &#x9;&#x9;
+               h1 Lorem ipsum dolor sit amet
+               | &#x9;&#x9;
+               p.description
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               | &#x9;&#x9;
+               a.default-button(href='#') Lorem ipsum dolor sit amet
+      | &#x9;&#x9;
+      section#animation-block.frame-1-active
+         .content-wrapper
+            .content-inner
+               .row
+                  .columns.large-5.push-6.large-text-left.large-uncentered.text-center.small-11.small-centered
+                     .content-text.first-step
+                        h2 Lorem ipsum dolor sit amet
+                        | &#x9;&#x9;
+                        p
+                           | Do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                     | &#x9;&#x9;
+                     .content-text.second-step
+                        h2 Lorem ipsum dolor sit amet
+                        | &#x9;&#x9;
+                        p
+                           | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                     | &#x9;&#x9;
+                     .content-text.third-step
+                        h2 Lorem ipsum dolor sit amet
+                        | &#x9;&#x9;
+                        p
+                           | Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+         | &#x9;&#x9;
+         .row.figure-block
+            .columns.large-12
+               .figure
+               | &#x9;&#x9;
+               .item-group
+                  span.fa.fa-home.icon-home.platform
+                  | &#x9;&#x9;
+                  span.fa.fa-automobile.icon-car.platform
+                  | &#x9;&#x9;
+                  span.fa.fa-laptop.icon-comp.platform
+                  | &#x9;&#x9;
+                  span.fa.fa-plane.icon-airplane.platform
+                  | &#x9;&#x9;
+                  span.line.one
+                  | &#x9;&#x9;
+                  span.line.two
+                  | &#x9;&#x9;
+                  span.line.three
+                  | &#x9;&#x9;
+                  span.line.four
+                  | &#x9;&#x9;
+                  span.connection.one
+                  | &#x9;&#x9;
+                  span.connection.two
+                  | &#x9;&#x9;
+                  span.connection.three
+                  | &#x9;&#x9;
+                  span.connection.four
+                  | &#x9;&#x9;
+                  span.connection.five
+      | &#x9;&#x9;
+      section#scroll-section
+         .scroll-section_title
+            .row.text-center
+               .columns.large-7.large-centered.small-10.small-centered.text-center
+                  h2.fa.fa-rocket.icon-future Lorem ipsum dolor sit amet
+                  | &#x9;&#x9;
+                  p
+                     | Lorem ipsum dolor sit amete Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+         | &#x9;&#x9;
+         .scroll-section_content
+            .row
+               .columns.small-12
+      | &#x9;&#x9;
+      section#blog-feed.navy-images-block.no-padding.icon-pencil
+         .row
+            a.features-panel.features-panel-bg1.columns.large-6.large-text-left.small-12.text-center(href='#')
+               .content-wrapper
+                  .content-inner
+                     h5 Lorem ipsum dolor sit amet
+                     | &#x9;&#x9;
+                     h6
+                        span.nowrap July 9th, 2015
+                        | &#x9;&#x9;
+                        span.nowrap
+                           | by
+                           span.author Shawn Chance
+            | &#x9;&#x9;
+            a.features-panel.features-panel-bg2.columns.large-6.large-text-left.small-12.text-center(href='')
+               .content-wrapper
+                  .content-inner
+                     h5 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                     | &#x9;&#x9;
+                     h6
+                        span.nowrap May 25th, 2015
+                        | &#x9;&#x9;
+                        span.nowrap
+                           | by
+                           span.author Kurt Bartlett
+      | &#x9;&#x9;
+      section#advertising-goods
+         .row
+            .columns.large-5.small-12
+               img(src='img/4.jpg', alt='')
+            | &#x9;&#x9;
+            .columns.large-7.small-12
+               p Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+               | &#x9;&#x9;
+               p
+                  | Lorem ipsum dolor sit amet
+                  a(href='#') Developer Kit FAQ
+               | &#x9;&#x9;
+               a.default-button(href='#', style='') Buy Now
+      | &#x9;&#x9;
+      footer.footer-container
+         .row
+            .columns.small-12
+               hr.bg-sand
+         | &#x9;&#x9;
+         .row
+            .columns.large-4.push-8.medium-4.small-12
+               h5 Lorem ipsum dolor sit amet
+               | &#x9;&#x9;
+               form(action='', method='post')
+                  input#field-name(type='text', required='', placeholder='Your name')
+                  | &#x9;&#x9;
+                  input#field-email(type='email', required='', placeholder='Enter email address')
+                  | &#x9;&#x9;
+                  button.default-button(type='submit') Continue
+            | &#x9;&#x9;
+            .columns.large-8.pull-4.medium-8.small-12
+               .row
+                  .columns.large-7.push-5.medium-7.small-12
+                     h5 Explore
+                     | &#x9;&#x9;
+                     nav.hidden-for-small
+                        .row
+                           .columns.large-4.medium-4.small-12
+                              ul
+                                 li
+                                    a(href='index.html') Home
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') Band
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') News
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') About Us
+                           | &#x9;&#x9;
+                           .columns.large-4.medium-4.small-12
+                              ul
+                                 li
+                                    a(href='') Develop
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') Contact
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') Careers
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') Press
+                           | &#x9;&#x9;
+                           .columns.large-4.medium-4.small-12
+                              ul
+                                 li
+                                    a(href='') Activate
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') Support
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') Press Kit
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') Legal
+                     | &#x9;&#x9;
+                     nav.show-for-small
+                        .row
+                           .columns.large-4.medium-4.small-12
+                              ul.row
+                                 li.columns.small-6
+                                    a(href='index.html') Home
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') Band
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') News
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') About Us
+                           | &#x9;&#x9;
+                           .columns.large-4.medium-4.small-12
+                              ul.row
+                                 li.columns.small-6
+                                    a(href='') Develop
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') Contact
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') Careers
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') Press
+                           | &#x9;&#x9;
+                           .columns.large-4.medium-4.small-12
+                              ul.row
+                                 li.columns.small-6
+                                    a(href='') Activate
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') Support
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') Press Kit
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') Legal
+                  | &#x9;&#x9;
+                  .columns.large-5.pull-7.medium-5.small-12
+                     a.logo-footer(href='')
+                        img(src='img/logo.jpeg', alt='')
+                     | &#x9;&#x9;
+                     p &copy; Copyright 2015. All Rights Reserved.
+      //if lt IE 9
+        script(type='text/javascript').
+          jQuery(document).ready(function($) {
+          $('.large-12').addClass('twelve');
+          $('.large-11').addClass('eleven');
+          $('.large-10').addClass('ten');
+          $('.large-9').addClass('nine');
+          $('.large-8').addClass('eight');
+          $('.large-7').addClass('seven');
+          $('.large-6').addClass('six');
+          $('.large-5').addClass('five');
+          $('.large-4').addClass('four');
+          $('.large-3').addClass('three');
+          $('.large-2').addClass('two');
+          $('.large-1').addClass('one');
+          });
+      | &#x9;&#x9;
+      script(src='js/vendor/jquery.js')
+      | &#x9;&#x9;
+      script(src='js/foundation.min.js')
+      | &#x9;&#x9;
+      script(src='js/foundation/foundation.dropdown.js')
+      | &#x9;&#x9;
+      script(src='js/vendor/main.js')
+      | &#x9;&#x9;
+      script.
+         $(document).foundation();
+
+

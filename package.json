@@ -1,0 +1,12 @@
+{
+  "name": "nymi_redesign",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Herman Semykozov",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.0.4"
+  }
+}
