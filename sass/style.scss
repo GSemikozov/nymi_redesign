@@ -1,6 +1,7 @@
 /*======================== mixins & variables ==============================*/
 /* colours */
 $defaultColor: #23bec6;
+$animationColor: #007d8a;
 $whiteColor: #fff;
 $blackColor: #333;
 $bgWhiteColor: #fff;
@@ -39,7 +40,7 @@ $textTransform: uppercase;
 }
 
 @mixin bg-white {
-  background: #fff;
+  background: $bgWhiteColor;
 }
 .bg-white {
   @include bg-white;
@@ -385,12 +386,12 @@ hr {
 
 @media only screen and (min-width: 750px) {
   .main-container .header-container {
-    background: #fff;
+    background: $bgWhiteColor;
     .header-container {
-      background: #fff;
+      background: $bgWhiteColor;
     }
     .header-container.compress {
-      background: #fff;
+      background: $bgWhiteColor;
     }
   }
 }
@@ -413,20 +414,19 @@ hr {
 }
 
 .header-container {
-  background: #fff;
+  background: $bgWhiteColor;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 100;
   padding: 10px 0;
-  border-bottom: 1px solid #e8e7d8;
+  border-bottom: 1px solid $whiteColor;
   -webkit-transition: padding 0.5s ease, border-color 0.5s ease, background 0.5s ease;
   -moz-transition: padding 0.5s ease, border-color 0.5s ease, background 0.5s ease;
   transition: padding 0.5s ease, border-color 0.5s ease, background 0.5s ease;
   .logo {
     top: 0;
-    margin-top: 20px;
     position: relative;
     display: block;
     float: left;
@@ -441,7 +441,7 @@ hr {
   nav {
     display: block;
     position: absolute;
-    top: -400px;
+    top: -420px;
     background: #1f3040;
     left: 0;
     right: 0;
@@ -454,7 +454,7 @@ hr {
       margin: 0;
       padding: 3px 0;
       a {
-        color: #23bec6;
+        color: $defaultColor;
         border: 2px solid transparent;
         display: block;
         padding: 9px 10px;
@@ -467,25 +467,44 @@ hr {
       &:last-child {
         padding-right: 0;
       }
-      .order-btn {
-        color: #23bec6;
+      select {
         background: transparent;
-        border: 2px solid #23bec6;
+        border: none;
+        color: $defaultColor;
+        font-weight: bold;
+        font-size: 13px;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-image: url(../img/arrow-down.png);
+        background-position: 100% center;
+        background-repeat: no-repeat;
+        transition: .2s all;
+        width: 60px;
+        &:hover, &:focus {
+          color: #333;
+          transition: .2s all;
+          background-image: url(../img/arrow-down-active.png);
+        }
+      }
+      .order-btn {
+        color: $defaultColor;
+        background: transparent;
+        border: 2px solid $defaultColor;
         &:hover {
           color: #fff;
-          background: #23bec6;
+          background: $defaultColor;
         }
       }
     }
     .language-menu {
       a:focus, a:active, a:hover {
-        border-bottom: 1px solid #23bec6;
+        border-bottom: 1px solid $defaultColor;
       }
     }
   }
   .open-menu-button {
     display: block;
-    color: #23bec6;
+    color: $defaultColor;
     position: absolute;
     height: 30px;
     line-height: 30px;
@@ -503,7 +522,7 @@ hr {
 
 @media only screen and (min-width: 910px) {
   .header-container {
-    padding: 15px 0 20px;
+    padding: 35px 0 20px;
     border-bottom: 1px solid transparent;
     .logo {
       width: 180px;
@@ -523,13 +542,19 @@ hr {
         text-align: left;
         padding: 0 5px 0 0;
       }
+      .languages_select {
+        display: block;
+      }
+      .language-menu {
+        display: none;
+      }
     }
     .open-menu-button {
       display: none;
     }
   }
   .header-container.compress {
-    padding: 0;
+    padding: 10px 0 0;
     border-bottom: 1px solid #b6b6a6;
     transition: padding 0.5s ease, border-color 0.5s ease, background 0.5s ease;
     .logo {
@@ -544,8 +569,12 @@ hr {
 }
 @media only screen and (max-width: 909px) {
   .header-container {
+    border-bottom: 1px solid #b6b6a6;
     .open-menu-button {
       display: block;
+    }
+    .languages_select {
+      display: none;
     }
     .language-menu {
       /*display: none;*/
@@ -557,9 +586,6 @@ hr {
 }
 @media only screen and (max-width: 767px) {
   .header-container {
-    .logo {
-      margin-top: 0;
-    }
     nav {
       padding: 30px 30px 20px;
       li {
@@ -612,7 +638,7 @@ hr {
           display: block;
           padding: 8px 0;
           &:hover {
-            color: #23bec6;
+            color: $defaultColor;
           }
         }
       }
@@ -626,7 +652,7 @@ hr {
       box-shadow: none;
       transition: .3s all;
       &:focus {
-        border-bottom: 2px solid #23bec6;
+        border-bottom: 2px solid $defaultColor;
         transition: .1s all;
         background: transparent;
       }
@@ -679,7 +705,7 @@ hr {
   }
   .icon-close {
     background: rgba(23, 35, 34, 0.75);
-    color: #FFFFFF;
+    color: $whiteColor;
     display: block;
     height: 35px;
     font-size: 16px;
@@ -728,18 +754,18 @@ hr {
 #presentation {
   position: relative;
   z-index: 2;
-  background: #fff;
+  background: $bgWhiteColor;
   margin: 0;
   transition: opacity 0.5s ease;
-  border-bottom: 1px solid #e8e7d8;
+  border-bottom: 1px solid $whiteColor;
   overflow: hidden;
   height: auto;
   padding: 220px 0 0;
-  color: #ffffff;
+  color: $whiteColor;
   h1 {
     font-size: 25px;
     margin: 15px 0;
-    color: #ffffff;
+    color: $whiteColor;
   }
   .description {
     margin: 0;
@@ -851,13 +877,13 @@ hr {
     transition: all 0.5s ease;
     z-index: 3;
     border: 1px solid transparent;
-    background: #fff;
+    background: $bgWhiteColor;
     &:before {
       display: block;
       width: 100px;
       height: 100px;
       line-height: 100px;
-      color: #007d8a;
+      color: $animationColor;
     }
   }
   .platform.icon-home {
@@ -875,7 +901,7 @@ hr {
   .line,
   .connection {
     display: block;
-    background: #007d8a;
+    background: $animationColor;
     height: 1px;
     z-index: 1;
     position: absolute;
@@ -978,7 +1004,7 @@ hr {
 
 #animation-block.frame-2-active {
   .platform {
-    background: #fff;
+    background: $bgWhiteColor;
   }
   .platform.icon-home {
     top: 10%;
@@ -1029,7 +1055,7 @@ hr {
     left: 5%;
   }
   .platform {
-    border-color: #007d8a;
+    border-color: $animationColor;
   }
   .platform.icon-home {
     bottom: 80%;
@@ -1146,14 +1172,14 @@ hr {
     }
     h2.icon-future:before {
       position: absolute;
-      background: #fff;
+      background: $bgWhiteColor;
       display: block;
       height: 130px;
       width: 130px;
       border-radius: 50%;
       border: 1px solid #b6b6a6;
       line-height: 130px;
-      color: #007d8a;
+      color: $animationColor;
       font-size: 80px;
       left: 50%;
       top: 0;
@@ -1211,7 +1237,7 @@ hr {
       width: 80%;
       margin: 20px 10% 0;
       .author {
-        color: #23bec6;
+        color: $defaultColor;
       }
     }
     img {
@@ -1370,10 +1396,6 @@ text-align: center;
       }
     }
   }
-}
-
-@media only screen and (max-width: 767px) {
-
 }
 @media only screen and (min-width: 640px) and (max-width: 767px){
   .inner-page-wrapper {

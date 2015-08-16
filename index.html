@@ -42,6 +42,13 @@
                             <li><a href="">Develop</a></li>
                             <li><a href="">Downloads</a></li>
                             <li><a href="" class="button order-btn">Order</a></li>
+                            <li class="languages_select">
+                                <select>
+                                    <option value="rus">rus </option>
+                                    <option value="eng">eng </option>
+                                    <option value="est">est </option>
+                                </select>
+                            </li>
                         </ul>
                     </nav>
                     <a href="javascript:void(0)" class="open-menu-button" id="menu-button"><i class="fa fa-bars"></i></a>
@@ -55,7 +62,7 @@
         <section id="presentation">
             <div class="row">
                 <div class="columns large-8 large-offset-2 medium-12 small-12 text-center">
-                    <a href="https://www.youtube.com/watch?v=qtuAPs9Gpqw" class="button play inner-video"></a>
+                    <a href="#" data-reveal-id="videoModal" class="button play inner-video"></a>
                     <h1>Lorem ipsum dolor sit amet</h1>
                     <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -272,6 +279,14 @@
                 </div>
             </div>
         </footer>
+
+        <div id="videoModal" class="reveal-modal large" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
+            <h2 id="videoModalTitle">This modal has video</h2>
+            <div class="flex-video widescreen vimeo">
+                <iframe width="1280" height="720" src="//www.youtube-nocookie.com/embed/wnXCopXXblE?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
 
 		<!--[if lt IE 9]>
         <script type="text/javascript">

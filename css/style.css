@@ -300,13 +300,12 @@ hr {
   top: 0;
   z-index: 100;
   padding: 10px 0;
-  border-bottom: 1px solid #e8e7d8;
+  border-bottom: 1px solid #fff;
   -webkit-transition: padding 0.5s ease, border-color 0.5s ease, background 0.5s ease;
   -moz-transition: padding 0.5s ease, border-color 0.5s ease, background 0.5s ease;
   transition: padding 0.5s ease, border-color 0.5s ease, background 0.5s ease; }
   .header-container .logo {
     top: 0;
-    margin-top: 20px;
     position: relative;
     display: block;
     float: left;
@@ -319,7 +318,7 @@ hr {
   .header-container nav {
     display: block;
     position: absolute;
-    top: -400px;
+    top: -420px;
     background: #1f3040;
     left: 0;
     right: 0;
@@ -342,6 +341,23 @@ hr {
           color: #333; }
       .header-container nav li:last-child {
         padding-right: 0; }
+      .header-container nav li select {
+        background: transparent;
+        border: none;
+        color: #23bec6;
+        font-weight: bold;
+        font-size: 13px;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-image: url(../img/arrow-down.png);
+        background-position: 100% center;
+        background-repeat: no-repeat;
+        transition: .2s all;
+        width: 60px; }
+        .header-container nav li select:hover, .header-container nav li select:focus {
+          color: #333;
+          transition: .2s all;
+          background-image: url(../img/arrow-down-active.png); }
       .header-container nav li .order-btn {
         color: #23bec6;
         background: transparent;
@@ -369,7 +385,7 @@ hr {
 
 @media only screen and (min-width: 910px) {
   .header-container {
-    padding: 15px 0 20px;
+    padding: 35px 0 20px;
     border-bottom: 1px solid transparent; }
     .header-container .logo {
       width: 180px;
@@ -387,10 +403,14 @@ hr {
         float: left;
         text-align: left;
         padding: 0 5px 0 0; }
+      .header-container nav .languages_select {
+        display: block; }
+      .header-container nav .language-menu {
+        display: none; }
     .header-container .open-menu-button {
       display: none; }
   .header-container.compress {
-    padding: 0;
+    padding: 10px 0 0;
     border-bottom: 1px solid #b6b6a6;
     transition: padding 0.5s ease, border-color 0.5s ease, background 0.5s ease; }
     .header-container.compress .logo {
@@ -401,17 +421,19 @@ hr {
       top: 2px; } }
 
 @media only screen and (max-width: 909px) {
-  .header-container .open-menu-button {
-    display: block; }
-  .header-container .language-menu {
-    /*display: none;*/
-    position: absolute;
-    right: 30px;
-    bottom: 10px; } }
+  .header-container {
+    border-bottom: 1px solid #b6b6a6; }
+    .header-container .open-menu-button {
+      display: block; }
+    .header-container .languages_select {
+      display: none; }
+    .header-container .language-menu {
+      /*display: none;*/
+      position: absolute;
+      right: 30px;
+      bottom: 10px; } }
 
 @media only screen and (max-width: 767px) {
-  .header-container .logo {
-    margin-top: 0; }
   .header-container nav {
     padding: 30px 30px 20px; }
     .header-container nav li a:hover {
@@ -494,7 +516,7 @@ hr {
     height: 100%; }
   .video-player .icon-close {
     background: rgba(23, 35, 34, 0.75);
-    color: #FFFFFF;
+    color: #fff;
     display: block;
     height: 35px;
     font-size: 16px;
@@ -534,15 +556,15 @@ hr {
   background: #fff;
   margin: 0;
   transition: opacity 0.5s ease;
-  border-bottom: 1px solid #e8e7d8;
+  border-bottom: 1px solid #fff;
   overflow: hidden;
   height: auto;
   padding: 220px 0 0;
-  color: #ffffff; }
+  color: #fff; }
   #presentation h1 {
     font-size: 25px;
     margin: 15px 0;
-    color: #ffffff; }
+    color: #fff; }
   #presentation .description {
     margin: 0;
     font-size: 16px; }
