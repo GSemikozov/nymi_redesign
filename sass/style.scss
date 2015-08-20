@@ -5,6 +5,7 @@ $animationColor: #007d8a;
 $whiteColor: #fff;
 $blackColor: #333;
 $bgWhiteColor: #fff;
+$bgScrollBlock: #95a5a6;
 /* others*/
 $textTransform: uppercase;
 /* mixins */
@@ -689,67 +690,6 @@ hr {
   }
 }
 
-.video-player {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: none;
-  background: rgba(255,255,255,0.7);
-  z-index: 999;
-  .player {
-    position: relative;
-    padding: 160px 15px 20px 15px;
-    width: 100%;
-    height: 100%;
-  }
-  .icon-close {
-    background: rgba(23, 35, 34, 0.75);
-    color: $whiteColor;
-    display: block;
-    height: 35px;
-    font-size: 16px;
-    padding: 5px;
-    position: absolute;
-    text-align: center;
-    top: 140px;
-    right:50px;
-    width: 40px;
-    z-index: 100;
-    border-radius: 4px;
-    transition: all 0.3s ease-out;
-    &:hover {
-      background: none repeat scroll 0 0 rgba(23, 35, 34, 0.40);
-    }
-  }
-  iframe {
-    position: relative;
-    background: #000;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 720px) {
-  .video-player {
-    .player {
-      padding: 180px 80px 80px 80px;
-    }
-    .icon-close {
-      right: 15px;
-      top: 120px;
-    }
-  }
-}
-@media only screen and (min-width: 320px) {
-  .video-player {
-    .icon-close {
-      top: 80px;
-    }
-  }
-}
 
 #presentation {
   position: relative;
@@ -1160,7 +1100,7 @@ hr {
 #scroll-section {
   padding: 80px 0 0 0;
   position: relative;
-  background: grey;
+  background-color: $bgScrollBlock;
   .scroll-section_title {
     position: relative;
     left: 0;
@@ -1194,7 +1134,7 @@ hr {
   }
   .scroll-section_content {
     height: 1370px;
-    background: url(../img/1.JPG) bottom center no-repeat;
+    background: url(../img/bg_scroll-block_lg.png) bottom center no-repeat;
     position: relative;
     z-index: 2;
     left: 0;
@@ -1203,16 +1143,158 @@ hr {
     .small-12 {
       height: 1370px;
     }
+    .center-icon {
+      display: block;
+      background: $defaultColor;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      color: #fff;
+      text-align: center;
+      z-index: 3;
+      bottom: 54%;
+      font-size: 80px;
+      width: 210px;
+      height: 210px;
+      margin: 0 0 -80px -120px;
+      line-height: 200px;
+    }
+    .video-block {
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      overflow: hidden;
+      z-index: 4;
+      transition: border-color 0.3s ease;
+      border: 10px solid #fff;
+      width: 177px;
+      height: 177px;
+      img {
+        width: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        margin: 0;
+        height: 170px;
+      }
+      &:hover {
+        color: $defaultColor;
+        border-color: $defaultColor;
+      }
+      .icon-play {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+        color: #fff;
+        transition: color 0.3s ease;
+        line-height: 160px;
+        font-size: 40px;
+        &:hover {
+          color: $defaultColor;
+        }
+        &:before {
+          content: "\25b6";
+        }
+      }
+    }
+    .video-block_first {
+      left: 5%;
+      bottom: 65%;
+      margin: 0 0 -3px -42px;
+    }
+    .video-block_second {
+      left: 10%;
+      bottom: 18%;
+      margin: 0 0 0 -11px;
+    }
+    .video-block_third {
+      width: 200px;
+      height: 200px;
+      left: 80%;
+      bottom: 68%;
+      margin: 0 0 0 -6px;
+      img {
+        height: 200px;
+      }
+    }
+    .video-block_fourth {
+      left: 82%;
+      bottom: 12%;
+      margin: 0 0 0 -5px;
+      img {
+        height: 200px;
+      }
+      .icon-play {
+        line-height: 160px;
+      }
+    }
+    .img-wrap_circle {
+      position: absolute;
+      bottom: 5%;
+      left: 53%;
+      margin: -65px 0 0 -65px;
+      width: 130px;
+      height: 130px;
+      z-index: 1;
+      border-radius: 50%;
+      overflow: hidden;
+    }
   }
 }
 
-@media only screen and (min-width: 1140px) {
+
+@media only screen and (min-width: 1170px) {
   #scroll-section {
     .scroll-section_content {
       height: 730px;
       .row,
       .small-12 {
         height: 730px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1169px) {
+  #scroll-section {
+    background-color: $bgScrollBlock;
+    .scroll-section_content {
+      background: url(../img/bg_scroll-block_sm.png) bottom center no-repeat;
+      .center-icon {
+        left: 50%;
+        bottom: 47%;
+        font-size: 150px;
+        width: 300px;
+        height: 300px;
+        margin: 0 0 -80px -160px;
+        line-height: 300px;
+      }
+      .video-block_first {
+        left: 50%;
+        bottom: 70%;
+        margin: 0 0 0 -200px;
+      }
+      .video-block_second {
+        left: 50%;
+        bottom: 1%;
+        margin: 0 0 0 -170px;
+      }
+      .video-block_third {
+        left: 50%;
+        bottom: 85%;
+        margin: 0 0 0 -100px;
+      }
+      .video-block_fourth {
+        display: none;
+      }
+      .img-wrap_circle {
+        bottom: 17%;
+        left: 50%;
+        margin: 0 0 0 -5px;
       }
     }
   }
