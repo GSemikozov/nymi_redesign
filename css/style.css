@@ -1132,3 +1132,57 @@ hr {
 @media only screen and (min-width: 640px) and (max-width: 767px) {
   .inner-page-wrapper section .info img {
     display: none; } }
+
+.inner-page-wrapper_form .form-container {
+  margin-bottom: 40px; }
+  .inner-page-wrapper_form .form-container section {
+    border: 1px solid #333; }
+    .inner-page-wrapper_form .form-container section .form-header {
+      padding: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #333; }
+    .inner-page-wrapper_form .form-container section #contact-request-form {
+      padding: 10px; }
+      .inner-page-wrapper_form .form-container section #contact-request-form input[type="text"], .inner-page-wrapper_form .form-container section #contact-request-form select {
+        height: 1.8rem; }
+      .inner-page-wrapper_form .form-container section #contact-request-form select {
+        padding: 0 8px; }
+      .inner-page-wrapper_form .form-container section #contact-request-form .message-text {
+        max-width: 90%;
+        height: 115px; }
+      .inner-page-wrapper_form .form-container section #contact-request-form .message-text_small {
+        max-width: 90%;
+        width: 280px;
+        height: 80px; }
+      .inner-page-wrapper_form .form-container section #contact-request-form .input-inline {
+        width: 80px;
+        display: inline-block; }
+      .inner-page-wrapper_form .form-container section #contact-request-form .form-global-label {
+        position: relative;
+        font-size: .9em;
+        font-weight: bold; }
+        .inner-page-wrapper_form .form-container section #contact-request-form .form-global-label:after {
+          color: #23bec6;
+          vertical-align: sub;
+          content: "\2055";
+          position: absolute; }
+      .inner-page-wrapper_form .form-container section #contact-request-form .form-global-label_without-icon {
+        position: relative;
+        font-size: .9em;
+        font-weight: bold; }
+
+.inner-page-wrapper_form .form-aside section {
+  padding: 10px;
+  border: 1px solid #333; }
+  .inner-page-wrapper_form .form-aside section .google-map {
+    width: 100%;
+    height: 350px;
+    border: 0; }
+  .inner-page-wrapper_form .form-aside section .contact-data {
+    list-style: none;
+    margin: 20px 0 0; }
+    .inner-page-wrapper_form .form-aside section .contact-data li {
+      display: block; }
+      .inner-page-wrapper_form .form-aside section .contact-data li:first-child {
+        font-weight: bold;
+        text-decoration: underline; }
