@@ -77,12 +77,6 @@ head
                a#menu-button.open-menu-button(href='javascript:void(0)')
                   i.fa.fa-bars
       | &#x9;&#x9;
-      #inner-video-player.video-player
-         a.icon-close(href='index.html#')
-            i.fa.fa-close
-         | &#x9;&#x9;
-         .player
-      | &#x9;&#x9;
       section#presentation
          .row
             .columns.large-8.large-offset-2.medium-12.small-12.text-center
@@ -164,6 +158,30 @@ head
          .scroll-section_content
             .row
                .columns.small-12
+                  span.center-icon.fa.fa-home
+                  | &#x9;&#x9;
+                  a.video-block.video-block_first(href='#', data-reveal-id='videoModal2')
+                     span.icon-play
+                     | &#x9;&#x9;
+                     img(src='img/img-user-1.jpg')
+                  | &#x9;&#x9;
+                  a.video-block.video-block_second(href='')
+                     span.icon-play
+                     | &#x9;&#x9;
+                     img(src='img/img-user-1.jpg')
+                  | &#x9;&#x9;
+                  a.video-block.video-block_third(href='')
+                     span.icon-play
+                     | &#x9;&#x9;
+                     img(src='img/img-user-1.jpg')
+                  | &#x9;&#x9;
+                  a.video-block.video-block_fourth(href='')
+                     span.icon-play
+                     | &#x9;&#x9;
+                     img(src='img/img-user-1.jpg')
+                  | &#x9;&#x9;
+                  span.img-wrap_circle
+                     img(src='img/logo-salesforce-sand.png', alt='')
       | &#x9;&#x9;
       section#blog-feed.navy-images-block.no-padding.icon-pencil
          .row
@@ -319,6 +337,21 @@ head
                         img(src='img/logo.jpeg', alt='')
                      | &#x9;&#x9;
                      p &copy; Copyright 2015. All Rights Reserved.
+      #videoModal.reveal-modal.large(data-reveal='', aria-labelledby='videoModalTitle', aria-hidden='true', role='dialog')
+         h2 This modal has video
+            | &#x9;&#x9;
+            .flex-video.widescreen.vimeo
+               iframe(width='1280', height='720', src='//www.youtube-nocookie.com/embed/wnXCopXXblE?rel=0', frameborder='0', allowfullscreen='')
+            | &#x9;&#x9;
+            a.close-reveal-modal(aria-label='Close') &times;
+         | &#x9;&#x9;
+         #videoModal2.reveal-modal.large(data-reveal='', aria-hidden='true', role='dialog')
+            h2 This modal has video
+            | &#x9;&#x9;
+            .flex-video.widescreen.vimeo
+               iframe(width='1280', height='720', src='//www.youtube-nocookie.com/embed/wnXCopXXblE?rel=0', frameborder='0', allowfullscreen='')
+            | &#x9;&#x9;
+            a.close-reveal-modal(aria-label='Close') &times;
       //if lt IE 9
         script(type='text/javascript').
           jQuery(document).ready(function($) {
