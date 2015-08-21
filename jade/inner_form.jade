@@ -1,0 +1,461 @@
+doctype html.no-js(lang='en')
+head
+   meta(charset='utf-8')
+   | &#x9;&#x9;
+   title Nymi redesign inner page
+   | &#x9;&#x9;
+   meta(name='viewport', content='width=device-width, initial-scale=1.0')
+   | &#x9;&#x9;
+   link(rel='stylesheet', href='css/foundation.min.css', type='text/css', media='all')
+   | &#x9;&#x9;
+   link(rel='stylesheet', href='css/style.css', type='text/css', media='all')
+   | &#x9;&#x9;
+   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+   | &#x9;&#x9;
+   script(src='js/vendor/modernizr.js')
+   body.main-container.desktop-device
+      header#menu-wrapper.header-container
+         .row
+            .columns.small-12
+               a.logo(href='#')
+                  img(src='img/logo.jpeg', alt='logo')
+               | &#x9;&#x9;
+               nav.clearfix
+                  section.clearfix.language-menu
+                     .right
+                        a(href='#')
+                           img(src='img/ee.png', alt='')
+                        | &#x9;&#x9;
+                        a(href='#')
+                           img(src='img/en.png', alt='')
+                        | &#x9;&#x9;
+                        a(href='#')
+                           img(src='img/ru.png', alt='')
+                  | &#x9;&#x9;
+                  ul.main-menu
+                     li
+                        a(href='') Home
+                     | &#x9;&#x9;
+                     li
+                        a(data-dropdown='drop', aria-controls='drop', aria-expanded='false')
+                           | Has Dropdown
+                           i.fa.fa-chevron-down
+                        | &#x9;&#x9;
+                        ul#drop.f-dropdown(data-dropdown-content='', aria-hidden='true', tabindex='-1')
+                           li
+                              a(href='#') This is a link
+                           | &#x9;&#x9;
+                           li
+                              a(href='#') This is another
+                           | &#x9;&#x9;
+                           li
+                              a(href='#') Yet another
+                     | &#x9;&#x9;
+                     li
+                        a(href='') Team
+                     | &#x9;&#x9;
+                     li
+                        a(href='') About Us
+                     | &#x9;&#x9;
+                     li
+                        a(href='') Develop
+                     | &#x9;&#x9;
+                     li
+                        a(href='') Downloads
+                     | &#x9;&#x9;
+                     li
+                        a.button.order-btn(href='') Order
+                     | &#x9;&#x9;
+                     li.languages_select
+                        select
+                           option(value='rus') rus
+                           | &#x9;&#x9;
+                           option(value='eng') eng
+                           | &#x9;&#x9;
+                           option(value='est') est
+               | &#x9;&#x9;
+               a#menu-button.open-menu-button(href='javascript:void(0)')
+                  i.fa.fa-bars
+      article.inner-page-wrapper
+         .row.inner-page-wrapper_form
+            .form-container.columns.small-12.large-8
+               section
+                  h2.form-header Contact Request Form
+                  | &#x9;&#x9;
+                  form#contact-request-form
+                     .row
+                        .columns.large-3
+                           span.form-global-label Your subject:
+                        | &#x9;&#x9;
+                        .columns.large-9
+                           div
+                              input#ch1(type='radio', value='ch1')
+                              label(for='ch1') I have a question before I purchase...
+                           | &#x9;&#x9;
+                           div
+                              input#ch2(type='radio', value='ch2')
+                              label(for='ch2') I am ready to purchase, process my order...
+                           | &#x9;&#x9;
+                           div
+                              input#ch3(type='radio', value='ch3')
+                              label(for='ch3') I have a device and need technical support...
+                           | &#x9;&#x9;
+                           div
+                              input#ch4(type='radio', value='ch4')
+                              label(for='ch4') I have many questions and I need training...
+                           | &#x9;&#x9;
+                           div
+                              input#ch5(type='radio', value='ch5')
+                              label(for='ch5') I want to sell CME Devices - how to apply?
+                           | &#x9;&#x9;
+                           div
+                              input#ch6(type='radio', value='ch6')
+                              label(for='ch6') I want to invite CME Scan to my location...
+                           | &#x9;&#x9;
+                           div
+                              input#ch7(type='radio', value='ch7')
+                              label(for='ch7') other:
+                              | &#x9;&#x9;
+                              input.input-inline(type='text')
+                     | &#x9;&#x9;
+                     .row
+                        .columns.large-3
+                           span.form-global-label Your message:
+                        | &#x9;&#x9;
+                        .columns.large-9
+                           textarea.message-text
+                     | &#x9;&#x9;
+                     .row
+                        .columns.large-3
+                           span.form-global-label How did you learn about CME/ERI Devices?
+                        | &#x9;&#x9;
+                        .columns.large-9
+                           textarea.message-text_small
+                     | &#x9;&#x9;
+                     .row
+                        .columns.large-3
+                           span.form-global-label How do you plan to use the device?
+                        | &#x9;&#x9;
+                        .columns.large-9
+                           .row
+                              .large-6.columns
+                                 div
+                                    input#checkbox1(type='checkbox')
+                                    label(for='checkbox1') Personal Use&lrm;
+                                 | &#x9;&#x9;
+                                 div
+                                    input#checkbox2(type='checkbox')
+                                    label(for='checkbox2') Licensed Medical Use&lrm;
+                                 | &#x9;&#x9;
+                                 div
+                                    input#checkbox3(type='checkbox')
+                                    label(for='checkbox3') Natural Health Store&lrm;
+                              | &#x9;&#x9;
+                              .large-6.columns
+                                 div
+                                    input#checkbox4(type='checkbox')
+                                    label(for='checkbox4') Non-Medical Business&lrm;
+                                 | &#x9;&#x9;
+                                 div
+                                    input#checkbox5(type='checkbox')
+                                    label(for='checkbox5') Non-Profit Organization&lrm;
+                                 | &#x9;&#x9;
+                                 div
+                                    input#checkbox6(type='checkbox')
+                                    label(for='checkbox6') other:
+                                    | &#x9;&#x9;
+                                    input.input-inline(type='text')
+                     | &#x9;&#x9;
+                     .row
+                        .columns.large-3
+                           span.form-global-label Full Name
+                        | &#x9;&#x9;
+                        .columns.large-9
+                           .row
+                              .large-3.columns
+                                 label
+                                    | First
+                                    input(type='text')
+                              | &#x9;&#x9;
+                              .large-3.columns.end
+                                 label
+                                    | Last
+                                    input(type='text')
+                     | &#x9;&#x9;
+                     .row
+                        .columns.large-3
+                           span.form-global-label Email
+                        | &#x9;&#x9;
+                        .columns.large-9
+                           .row
+                              .large-8.columns.end
+                                 label
+                                    input(type='text')
+                     | &#x9;&#x9;
+                     .row
+                        .columns.large-3
+                           span.form-global-label_without-icon Phone Number
+                        | &#x9;&#x9;
+                        .columns.large-9
+                           .row
+                              .large-5.columns.end
+                                 label
+                                    input(type='text')
+                     | &#x9;&#x9;
+                     .row
+                        .columns.large-3
+                           span.form-global-label_without-icon Company Name
+                        | &#x9;&#x9;
+                        .columns.large-9
+                           .row
+                              .large-5.columns.end
+                                 label
+                                    input(type='text')
+                     | &#x9;&#x9;
+                     .row
+                        .columns.large-3
+                           span.form-global-label_without-icon Company Website
+                        | &#x9;&#x9;
+                        .columns.large-9
+                           .row
+                              .large-5.columns.end
+                                 label
+                                    input(type='text')
+                     | &#x9;&#x9;
+                     .row
+                        .columns.large-3
+                           span.form-global-label_without-icon Address
+                        | &#x9;&#x9;
+                        .columns.large-9
+                           .row
+                              .large-12.columns
+                                 label
+                                    | Street Address
+                                    input(type='text')
+                              | &#x9;&#x9;
+                              .large-12.columns
+                                 label
+                                    | Street Address Line 2
+                                    input(type='text')
+                              | &#x9;&#x9;
+                              .large-6.columns
+                                 label
+                                    | City
+                                    input(type='text')
+                              | &#x9;&#x9;
+                              .large-6.columns
+                                 label
+                                    | Region
+                                    input(type='text')
+                              | &#x9;&#x9;
+                              .large-6.columns
+                                 label
+                                    | Postal / Zip Code
+                                    input(type='text')
+                              | &#x9;&#x9;
+                              .large-6.columns
+                                 label
+                                    | Country
+                                    select
+                                       option(value='ru') &Rcy;&ucy;&scy;&scy;&kcy;&icy;&jcy;
+                                       | &#x9;&#x9;
+                                       option(value='en') English
+                                       | &#x9;&#x9;
+                                       option(value='ee') Eesti
+                                       | &#x9;&#x9;
+                                       option(value='ge') German
+                     | &#x9;&#x9;
+                     .row
+                        .columns.large-4.end.large-offset-3
+                           button.default-button(type='submit') Submit
+            | &#x9;&#x9;
+            aside.form-aside.columns.small-12.large-4
+               section
+                  h2 How to Find Us
+                  | &#x9;&#x9;
+                  h4 Los Angeles, California, USA
+                  | &#x9;&#x9;
+                  div
+                     iframe#LA-office.google-map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6607.704419957117!2d-118.28629588651094!3d34.098926312802305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c74d3713ce59%3A0x14a659b8f1c2fe37!2zNDQ0MyBTdW5zZXQgQmx2ZCwgTG9zIEFuZ2VsZXMsIENBIDkwMDI3LCDQodCo0JA!5e0!3m2!1sru!2see!4v1440161650452', frameborder='0', allowfullscreen='')
+                  | &#x9;&#x9;
+                  div
+                     | 4443 W Sunset Blvd Los Angeles CA 90027 US
+                  | &#x9;&#x9;
+                  ul.contact-data
+                     li USA Sales &amp; Support
+                     | &#x9;&#x9;
+                     li Ulysses Sheretov
+                     | &#x9;&#x9;
+                     li
+                        | email:
+                        a(href='') sales@cmescan.com
+                     | &#x9;&#x9;
+                     li usa free: 1 (800)590-1872
+                     | &#x9;&#x9;
+                     li usa local:  1 (323)300-5102
+                     | &#x9;&#x9;
+                     li worldwide txt msg: 1-818-974-1422
+                     | &#x9;&#x9;
+                     li skype: uangulo
+               | &#x9;&#x9;
+               section
+                  h4 Prague, Czech Republic, EU
+                  | &#x9;&#x9;
+                  div
+                     iframe#Prague-office.google-map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.4500411562412!2d14.336086499999999!3d50.04040020000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95e28a595fd7%3A0xa76335fb5b336e2!2zVGx1bWHEjW92c2vDoSAyNiwgMTU1IDAwIFByYWhhIDEzLCDQp9C10YXQuNGP!5e0!3m2!1sru!2see!4v1440161980699', frameborder='0', allowfullscreen='')
+                  | &#x9;&#x9;
+                  div
+                     | Tlumacovska 2766/26, Prague 5 Stodulky, Czech Republic, 155 21
+                  | &#x9;&#x9;
+                  ul.contact-data
+                     li UK &amp; EU Sales &amp; Support
+                     | &#x9;&#x9;
+                     li Maria Sheretova
+                     | &#x9;&#x9;
+                     li
+                        | email:
+                        a(href='') maria@cmescan.com
+                     | &#x9;&#x9;
+                     li prague: +420 (608) 572-435
+                     | &#x9;&#x9;
+                     li usa local:  1 (323)217-7616
+                     | &#x9;&#x9;
+                     li worldwide txt msg:+420 (608) 572-435
+                     | &#x9;&#x9;
+                     li skype: diacom-uk
+      footer.footer-container
+         .row
+            .columns.small-12
+               hr.bg-sand
+         | &#x9;&#x9;
+         .row
+            .columns.large-4.push-8.medium-4.small-12
+               h5 Lorem ipsum dolor sit amet
+               | &#x9;&#x9;
+               form(action='', method='post')
+                  input#field-name(type='text', required='', placeholder='Your name')
+                  | &#x9;&#x9;
+                  input#field-email(type='email', required='', placeholder='Enter email address')
+                  | &#x9;&#x9;
+                  button.default-button(type='submit') Continue
+            | &#x9;&#x9;
+            .columns.large-8.pull-4.medium-8.small-12
+               .row
+                  .columns.large-7.push-5.medium-7.small-12
+                     h5 Explore
+                     | &#x9;&#x9;
+                     nav.hidden-for-small
+                        .row
+                           .columns.large-4.medium-4.small-12
+                              ul
+                                 li
+                                    a(href='index.html') Home
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') Band
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') News
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') About Us
+                           | &#x9;&#x9;
+                           .columns.large-4.medium-4.small-12
+                              ul
+                                 li
+                                    a(href='') Develop
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') Contact
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') Careers
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') Press
+                           | &#x9;&#x9;
+                           .columns.large-4.medium-4.small-12
+                              ul
+                                 li
+                                    a(href='') Activate
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') Support
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') Press Kit
+                                 | &#x9;&#x9;
+                                 li
+                                    a(href='') Legal
+                     | &#x9;&#x9;
+                     nav.show-for-small
+                        .row
+                           .columns.large-4.medium-4.small-12
+                              ul.row
+                                 li.columns.small-6
+                                    a(href='index.html') Home
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') Band
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') News
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') About Us
+                           | &#x9;&#x9;
+                           .columns.large-4.medium-4.small-12
+                              ul.row
+                                 li.columns.small-6
+                                    a(href='') Develop
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') Contact
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') Careers
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') Press
+                           | &#x9;&#x9;
+                           .columns.large-4.medium-4.small-12
+                              ul.row
+                                 li.columns.small-6
+                                    a(href='') Activate
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') Support
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') Press Kit
+                                 | &#x9;&#x9;
+                                 li.columns.small-6
+                                    a(href='') Legal
+                  | &#x9;&#x9;
+                  .columns.large-5.pull-7.medium-5.small-12
+                     a.logo-footer(href='')
+                        img(src='img/logo.jpeg', alt='')
+                     | &#x9;&#x9;
+                     p &copy; Copyright 2015. All Rights Reserved.
+      //if lt IE 9
+        script(type='text/javascript').
+          jQuery(document).ready(function($) {
+          $('.large-12').addClass('twelve');
+          $('.large-11').addClass('eleven');
+          $('.large-10').addClass('ten');
+          $('.large-9').addClass('nine');
+          $('.large-8').addClass('eight');
+          $('.large-7').addClass('seven');
+          $('.large-6').addClass('six');
+          $('.large-5').addClass('five');
+          $('.large-4').addClass('four');
+          $('.large-3').addClass('three');
+          $('.large-2').addClass('two');
+          $('.large-1').addClass('one');
+          });
+      script(src='js/vendor/jquery.js')
+      script(src='js/foundation.min.js')
+      script(src='js/foundation/foundation.dropdown.js')
+      script(src='js/vendor/main.js')
+      script.
+         $(document).foundation();

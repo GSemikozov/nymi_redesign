@@ -37,7 +37,9 @@ head
                         a(href='') Home
                      | &#x9;&#x9;
                      li
-                        a(data-dropdown='drop', aria-controls='drop', aria-expanded='false') Has Dropdown
+                        a(data-dropdown='drop', aria-controls='drop', aria-expanded='false')
+                           | Has Dropdown
+                           i.fa.fa-chevron-down
                         | &#x9;&#x9;
                         ul#drop.f-dropdown(data-dropdown-content='', aria-hidden='true', tabindex='-1')
                            li
@@ -63,6 +65,14 @@ head
                      | &#x9;&#x9;
                      li
                         a.button.order-btn(href='') Order
+                     | &#x9;&#x9;
+                     li.languages_select
+                        select
+                           option(value='rus') rus
+                           | &#x9;&#x9;
+                           option(value='eng') eng
+                           | &#x9;&#x9;
+                           option(value='est') est
                | &#x9;&#x9;
                a#menu-button.open-menu-button(href='javascript:void(0)')
                   i.fa.fa-bars
